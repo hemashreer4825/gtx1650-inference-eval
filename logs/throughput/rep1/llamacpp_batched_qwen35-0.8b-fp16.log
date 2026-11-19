@@ -1,0 +1,16 @@
+0.02.025.043 W model has unused tensor blk.24.attn_norm.weight (size = 4096 bytes) -- ignoring
+0.02.025.071 W model has unused tensor blk.24.post_attention_norm.weight (size = 4096 bytes) -- ignoring
+0.02.025.080 W model has unused tensor blk.24.attn_q.weight (size = 8388608 bytes) -- ignoring
+0.02.025.083 W model has unused tensor blk.24.attn_k.weight (size = 1048576 bytes) -- ignoring
+0.02.025.086 W model has unused tensor blk.24.attn_v.weight (size = 1048576 bytes) -- ignoring
+0.02.025.095 W model has unused tensor blk.24.attn_output.weight (size = 4194304 bytes) -- ignoring
+0.02.025.098 W model has unused tensor blk.24.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+0.02.025.101 W model has unused tensor blk.24.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+0.02.025.104 W model has unused tensor blk.24.ffn_gate.weight (size = 7340032 bytes) -- ignoring
+0.02.025.107 W model has unused tensor blk.24.ffn_down.weight (size = 7340032 bytes) -- ignoring
+0.02.025.110 W model has unused tensor blk.24.ffn_up.weight (size = 7340032 bytes) -- ignoring
+0.02.025.114 W model has unused tensor blk.24.nextn.eh_proj.weight (size = 4194304 bytes) -- ignoring
+0.02.025.117 W model has unused tensor blk.24.nextn.enorm.weight (size = 4096 bytes) -- ignoring
+0.02.025.120 W model has unused tensor blk.24.nextn.hnorm.weight (size = 4096 bytes) -- ignoring
+0.02.025.129 W model has unused tensor blk.24.nextn.shared_head_norm.weight (size = 4096 bytes) -- ignoring
+0.30.602.532 W llama_context: n_ctx is not divisible by n_seq_max - rounding down to 12288

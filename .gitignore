@@ -1,0 +1,6 @@
+# large / reproducible things - not published
+models/
+.venv-*/
+llama.cpp/
+__pycache__/
+*.pyc

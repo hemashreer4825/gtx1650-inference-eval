@@ -1,0 +1,66 @@
+
+################ results/throughput/rep1
+== 1. raw files: rows, grid coverage, NaN/zero values
+  OK   llamacpp_batched_minicpm5-2b-q4.jsonl         rows=10 tg={128}
+  OK   llamacpp_batched_qwen25-1.5b-q4.jsonl         rows=10 tg={128}
+  OK   llamacpp_batched_qwen3-1.7b-q4.jsonl          rows=10 tg={128}
+  OK   llamacpp_batched_qwen35-0.8b-fp16.jsonl       rows=10 tg={128}
+  OK   vllm_minicpm5-2b-q4_default.jsonl             rows=10 tg={128}
+  OK   vllm_minicpm5-2b-q4_matchkv.jsonl             rows=10 tg={128}
+  OK   vllm_qwen25-1.5b-q4_default.jsonl             rows=10 tg={128}
+  OK   vllm_qwen25-1.5b-q4_matchkv.jsonl             rows=10 tg={128}
+  OK   vllm_qwen3-1.7b-q4_default.jsonl              rows=10 tg={128}
+  OK   vllm_qwen3-1.7b-q4_matchkv.jsonl              rows=10 tg={128}
+  OK   vllm_qwen35-0.8b-fp16_default.jsonl           rows=10 tg={128}
+  OK   vllm_qwen35-0.8b-fp16_matchkv.jsonl           rows=10 tg={128}
+== 2. speed formula: speed_tg == pl*tg/t_tg, speed_pp == pl*pp/t_pp
+  OK   llamacpp_batched_minicpm5-2b-q4.jsonl         max rel err tg=0.000% pp=0.000%
+  OK   llamacpp_batched_qwen25-1.5b-q4.jsonl         max rel err tg=0.000% pp=0.000%
+  OK   llamacpp_batched_qwen3-1.7b-q4.jsonl          max rel err tg=0.000% pp=0.000%
+  OK   llamacpp_batched_qwen35-0.8b-fp16.jsonl       max rel err tg=0.000% pp=0.000%
+  OK   vllm_minicpm5-2b-q4_default.jsonl             max rel err tg=0.021% pp=0.004%
+  OK   vllm_minicpm5-2b-q4_matchkv.jsonl             max rel err tg=0.035% pp=0.007%
+  OK   vllm_qwen25-1.5b-q4_default.jsonl             max rel err tg=0.033% pp=0.004%
+  OK   vllm_qwen25-1.5b-q4_matchkv.jsonl             max rel err tg=0.034% pp=0.006%
+  OK   vllm_qwen3-1.7b-q4_default.jsonl              max rel err tg=0.030% pp=0.006%
+  OK   vllm_qwen3-1.7b-q4_matchkv.jsonl              max rel err tg=0.047% pp=0.005%
+  OK   vllm_qwen35-0.8b-fp16_default.jsonl           max rel err tg=0.072% pp=0.004%
+  OK   vllm_qwen35-0.8b-fp16_matchkv.jsonl           max rel err tg=0.071% pp=0.002%
+== 3. llama-batched-bench pl=1 vs llama-bench (independent tool)
+  OK   qwen35-0.8b-fp16   tg: batched   32.4 vs bench   31.2 | pp512: batched  308.7 vs bench  303.0
+  OK   qwen25-1.5b-q4     tg: batched   42.7 vs bench   37.5 | pp512: batched  366.4 vs bench  381.3
+  OK   qwen3-1.7b-q4      tg: batched   37.7 vs bench   33.5 | pp512: batched  328.0 vs bench  341.6
+  FAIL minicpm5-2b-q4     tg: batched   29.5 vs bench   25.6 | pp512: batched  242.6 vs bench  240.7
+== 4. GPU sampler: power / clocks / temperature per run (throttling check)
+  OK   gpu_llamacpp_minicpm5-2b-q4.csv        n= 1125  power med  28.8 W  SM clk med   1410 MHz  temp max  81 C
+  OK   gpu_llamacpp_qwen25-1.5b-q4.csv        n=  750  power med  28.9 W  SM clk med   1425 MHz  temp max  79 C
+  OK   gpu_llamacpp_qwen3-1.7b-q4.csv         n=  875  power med  28.8 W  SM clk med   1410 MHz  temp max  80 C
+  OK   gpu_llamacpp_qwen35-0.8b-fp16.csv      n= 1041  power med  28.9 W  SM clk med   1410 MHz  temp max  77 C
+  OK   gpu_vllm_minicpm5-2b-q4_default.csv    n= 9537  power med  29.0 W  SM clk med   1575 MHz  temp max  84 C
+  OK   gpu_vllm_minicpm5-2b-q4_matchkv.csv    n= 9062  power med  29.1 W  SM clk med   1590 MHz  temp max  84 C
+  OK   gpu_vllm_qwen25-1.5b-q4_default.csv    n= 6771  power med  29.1 W  SM clk med   1590 MHz  temp max  84 C
+  OK   gpu_vllm_qwen25-1.5b-q4_matchkv.csv    n= 6643  power med  29.1 W  SM clk med   1575 MHz  temp max  84 C
+  OK   gpu_vllm_qwen3-1.7b-q4_default.csv     n= 8323  power med  29.0 W  SM clk med   1575 MHz  temp max  84 C
+  OK   gpu_vllm_qwen3-1.7b-q4_matchkv.csv     n= 7985  power med  29.1 W  SM clk med   1575 MHz  temp max  84 C
+  OK   gpu_vllm_qwen35-0.8b-fp16_default.csv  n=11463  power med  29.2 W  SM clk med   1590 MHz  temp max  83 C
+  OK   gpu_vllm_qwen35-0.8b-fp16_matchkv.csv  n= 9760  power med  29.1 W  SM clk med   1575 MHz  temp max  84 C
+== 5. errors / fallbacks in logs
+  OK   llamacpp_batched_minicpm5-2b-q4.log           []
+  OK   llamacpp_batched_qwen25-1.5b-q4.log           []
+  OK   llamacpp_batched_qwen3-1.7b-q4.log            []
+  OK   llamacpp_batched_qwen35-0.8b-fp16.log         []
+  OK   llamacpp_bench_minicpm5-2b-q4.log             []
+  OK   llamacpp_bench_qwen25-1.5b-q4.log             []
+  OK   llamacpp_bench_qwen3-1.7b-q4.log              []
+  OK   llamacpp_bench_qwen35-0.8b-fp16.log           []
+  OK   run_all_A.log                                 []
+  FAIL run_all_BC.log                                ['FAILED']
+  OK   run_all_C.log                                 []
+  OK   vllm_bench_minicpm5-2b-q4_default.log         []
+  OK   vllm_bench_minicpm5-2b-q4_matchkv.log         []
+  OK   vllm_bench_qwen25-1.5b-q4_default.log         []
+  OK   vllm_bench_qwen25-1.5b-q4_matchkv.log         []
+  OK   vllm_bench_qwen3-1.7b-q4_default.log          []
+  OK   vllm_bench_qwen3-1.7b-q4_matchkv.log          []
+  OK   vllm_bench_qwen35-0.8b-fp16_default.log       []
+  OK   vllm_bench_qwen35-0.8b-fp16_matchkv.log       []

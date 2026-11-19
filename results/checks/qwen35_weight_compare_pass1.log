@@ -1,0 +1,169 @@
+GGUF: models/gguf/Qwen3.5-0.8B-F16.gguf
+arch=qwen35 blocks=25 tensors=299
+HF: models/hf/hub/models--Qwen--Qwen3.5-0.8B/snapshots/2fc06364715b967f1860aea9cf38778875588b17/
+safetensors files=1 tensors=488
+  [match after plus_1 (norm stored as 1+w)] blk.0.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.0.ssm_a
+  [no HF source found] blk.0.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.0.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.0.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.0.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.1.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.1.ssm_a
+  [no HF source found] blk.1.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.1.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.1.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.1.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.10.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.10.ssm_a
+  [no HF source found] blk.10.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.10.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.10.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.10.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.11.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.11.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.11.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.11.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.12.attn_norm.weight
+  [MISMATCH] blk.12.ssm_a from ['model.language_model.layers.12.linear_attn.A_log'] max_abs_diff=2.983e+00 mean_abs_diff=1.420e+00
+  [no HF source found] blk.12.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.12.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.12.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.12.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.13.attn_norm.weight
+  [MISMATCH] blk.13.ssm_a from ['model.language_model.layers.13.linear_attn.A_log'] max_abs_diff=2.093e+00 mean_abs_diff=1.064e+00
+  [no HF source found] blk.13.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.13.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.13.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.13.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.14.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.14.ssm_a
+  [no HF source found] blk.14.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.14.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.14.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.14.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.15.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.15.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.15.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.15.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.16.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.16.ssm_a
+  [no HF source found] blk.16.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.16.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.16.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.16.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.17.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.17.ssm_a
+  [no HF source found] blk.17.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.17.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.17.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.17.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.18.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.18.ssm_a
+  [no HF source found] blk.18.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.18.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.18.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.18.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.19.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.19.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.19.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.19.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.2.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.2.ssm_a
+  [no HF source found] blk.2.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.2.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.2.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.2.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.20.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.20.ssm_a
+  [no HF source found] blk.20.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.20.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.20.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.20.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.21.attn_norm.weight
+  [MISMATCH] blk.21.ssm_a from ['model.language_model.layers.21.linear_attn.A_log'] max_abs_diff=1.758e+00 mean_abs_diff=1.103e+00
+  [no HF source found] blk.21.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.21.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.21.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.21.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.22.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.22.ssm_a
+  [no HF source found] blk.22.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.22.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.22.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.22.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.23.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.23.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.23.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.23.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.3.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.3.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.3.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.3.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.4.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.4.ssm_a
+  [no HF source found] blk.4.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.4.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.4.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.4.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.5.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.5.ssm_a
+  [no HF source found] blk.5.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.5.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.5.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.5.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.6.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.6.ssm_a
+  [no HF source found] blk.6.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.6.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.6.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.6.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.7.attn_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.7.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.7.attn_k_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.7.attn_q_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.8.attn_norm.weight
+  [MISMATCH] blk.8.ssm_a from ['model.language_model.layers.8.linear_attn.A_log'] max_abs_diff=2.653e+00 mean_abs_diff=1.047e+00
+  [no HF source found] blk.8.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.8.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.8.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.8.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] blk.9.attn_norm.weight
+  [match after minus_exp (A_log -> -exp(A))] blk.9.ssm_a
+  [no HF source found] blk.9.ssm_dt.bias shape=[np.uint64(16)] n=16
+  [no HF source found] blk.9.ssm_beta_alpha.weight shape=[np.uint64(1024), np.uint64(32)] n=32768
+  [no HF source found] blk.9.attn_qkv_gate.weight shape=[np.uint64(1024), np.uint64(8192)] n=8388608
+  [match after plus_1 (norm stored as 1+w)] blk.9.post_attention_norm.weight
+  [match after plus_1 (norm stored as 1+w)] output_norm.weight
+  [no HF source found] blk.24.nextn.eh_proj.weight shape=[np.uint64(2048), np.uint64(1024)] n=2097152
+  [no HF source found] blk.24.attn_norm.weight shape=[np.uint64(1024)] n=1024
+  [no HF source found] blk.24.ffn_down.weight shape=[np.uint64(3584), np.uint64(1024)] n=3670016
+  [no HF source found] blk.24.ffn_gate.weight shape=[np.uint64(1024), np.uint64(3584)] n=3670016
+  [no HF source found] blk.24.ffn_up.weight shape=[np.uint64(1024), np.uint64(3584)] n=3670016
+  [no HF source found] blk.24.post_attention_norm.weight shape=[np.uint64(1024)] n=1024
+  [no HF source found] blk.24.attn_k_norm.weight shape=[np.uint64(256)] n=256
+  [no HF source found] blk.24.attn_k.weight shape=[np.uint64(1024), np.uint64(512)] n=524288
+  [no HF source found] blk.24.attn_output.weight shape=[np.uint64(2048), np.uint64(1024)] n=2097152
+  [no HF source found] blk.24.attn_q_norm.weight shape=[np.uint64(256)] n=256
+  [no HF source found] blk.24.attn_q.weight shape=[np.uint64(1024), np.uint64(4096)] n=4194304
+  [no HF source found] blk.24.attn_v.weight shape=[np.uint64(1024), np.uint64(512)] n=524288
+  [no HF source found] blk.24.nextn.shared_head_norm.weight shape=[np.uint64(1024)] n=1024
+  [no HF source found] blk.24.nextn.enorm.weight shape=[np.uint64(1024)] n=1024
+  [no HF source found] blk.24.nextn.hnorm.weight shape=[np.uint64(1024)] n=1024
+
+===== SUMMARY
+GGUF tensors: 299  elements: 772,845,888
+  exact                                            151
+  transform                                        75
+  concat/permuted (elementwise multiset equal)     0
+  MISMATCH                                         4
+  not_float                                        0
+  no_hf_source                                     69
+HF tensors with no GGUF counterpart: 258
+    model.language_model*  (90 tensors)
+    model.visual*  (153 tensors)
+    mtp.fc*  (1 tensors)
+    mtp.layers*  (11 tensors)
+    mtp.norm*  (1 tensors)
+    mtp.pre_fc_norm_embedding*  (1 tensors)
+    mtp.pre_fc_norm_hidden*  (1 tensors)

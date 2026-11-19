@@ -1,0 +1,7 @@
+===== llama.cpp (Qwen3.5-0.8B-F16.gguf)
+   'What is 17*23? Answer with jus' -> '501'
+   'What is 12*12? Answer with jus' -> '144'
+   'Write one sentence about the m' -> 'The moon is a silent, solitary mirror that reflects the vast, dark sky without ever speaking a single word.'
+   'List three primary colors.' -> 'The three primary colors of light are **Red**, **Green**, and **Blue**.\n\nThese are the colors that, when mixed together '
+   "Translate 'good morning' to Fr" -> 'Bonjour.'
+===== vLLM (Qwen/Qwen3.5-0.8B, FP16)

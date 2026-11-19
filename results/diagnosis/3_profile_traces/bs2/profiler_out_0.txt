@@ -1,0 +1,107 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                               aten::mm         0.01%       2.750ms         0.01%       3.542ms     107.319us        3.032s        55.12%        3.032s      91.871ms            33  
+             volta_fp16_s884gemm_fp16_64x64_ldg8_f2f_tn         0.00%       0.000us         0.00%       0.000us       0.000us        3.025s        55.00%        3.025s      97.588ms            31  
+                                        _C::marlin_gemm         0.02%       9.014ms         0.06%      22.104ms      98.680us        1.281s        23.28%        1.281s       5.717ms           224  
+                   execute_context_0(0)_generation_2(2)         0.00%       0.000us         0.00%       0.000us       0.000us        1.252s        22.75%        1.252s      41.719ms            30  
+void marlin::Marlin<1125899906910725l, 1125899906843...         0.00%       0.000us         0.00%       0.000us       0.000us        1.246s        22.65%        1.246s       5.562ms           224  
+void marlin::Marlin<1125899906910725l, 1125899906843...         0.00%       0.000us         0.00%       0.000us       0.000us        1.156s        21.02%        1.156s     322.507us          3584  
+                 execute_context_1(128)_generation_0(0)         0.00%       0.000us         0.00%       0.000us       0.000us     743.972ms        13.53%     743.972ms     743.972ms             1  
+                 execute_context_1(128)_generation_1(1)         0.00%       0.000us         0.00%       0.000us       0.000us     581.587ms        10.57%     581.587ms     581.587ms             1  
+                               kernel_unified_attention         0.00%       0.000us         0.00%       0.000us       0.000us      42.583ms         0.77%      42.583ms      46.085us           924  
+                   execute_context_0(0)_generation_1(1)         0.00%       0.000us         0.00%       0.000us       0.000us      40.630ms         0.74%      40.630ms      40.630ms             1  
+                    vllm::unified_attention_with_output         0.00%     342.745us         0.04%      16.455ms     293.840us      20.719ms         0.38%      20.719ms     369.980us            56  
+void gemv2T_kernel_val<int, int, __half, __half, __h...         0.00%       0.000us         0.00%       0.000us       0.000us       6.511ms         0.12%       6.511ms       3.256ms             2  
+                      triton_poi_fused_mul_silu_slice_1         0.00%       0.000us         0.00%       0.000us       0.000us       6.495ms         0.12%       6.495ms       7.029us           924  
+                      triton_poi_fused_mul_silu_slice_1         0.00%     306.117us         0.00%       1.940ms      34.634us       4.467ms         0.08%       4.467ms      79.763us            56  
+                  triton_red_fused_fused_add_rms_norm_2         0.00%       0.000us         0.00%       0.000us       0.000us       3.955ms         0.07%       3.955ms       4.280us           924  
+                                        reduce_segments         0.00%       0.000us         0.00%       0.000us       0.000us       3.497ms         0.06%       3.497ms       4.029us           868  
+                  triton_red_fused_fused_add_rms_norm_0         0.00%       0.000us         0.00%       0.000us       0.000us       3.319ms         0.06%       3.319ms       3.592us           924  
+                   execute_context_0(0)_generation_0(0)         0.00%       0.000us         0.00%       0.000us       0.000us       2.577ms         0.05%       2.577ms       1.288ms             2  
+                                     triton_poi_fused_3         0.00%       0.000us         0.00%       0.000us       0.000us       2.351ms         0.04%       2.351ms       2.639us           891  
+                         reshape_and_cache_kernel_flash         0.00%       0.000us         0.00%       0.000us       0.000us       2.224ms         0.04%       2.224ms       2.407us           924  
+                  triton_red_fused_fused_add_rms_norm_2         0.00%     357.322us         0.01%       2.260ms      40.355us       1.059ms         0.02%       1.059ms      18.907us            56  
+                  triton_red_fused_fused_add_rms_norm_0         0.00%     308.526us         0.01%       2.594ms      46.319us     702.825us         0.01%     702.825us      12.550us            56  
+                                            aten::copy_         0.03%      10.310ms        13.50%        5.354s       6.642ms     482.239us         0.01%     562.663us       0.698us           806  
+                          vllm::unified_kv_cache_update         0.00%     333.292us         0.04%      15.174ms     270.971us     440.102us         0.01%     440.102us       7.859us            56  
+                                     triton_poi_fused_3         0.00%     248.768us         0.01%       2.126ms      39.376us     344.234us         0.01%     344.234us       6.375us            54  
+                       Memcpy HtoD (Pageable -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us     293.947us         0.01%     293.947us       0.436us           674  
+         triton_red_fused__to_copy_embedding_rms_norm_0         0.00%       0.000us         0.00%       0.000us       0.000us     263.237us         0.00%     263.237us       7.977us            33  
+                                            aten::index         0.01%       3.010ms         0.01%       5.617ms      56.734us     253.387us         0.00%     253.387us       2.559us            99  
+                                  _gumbel_sample_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     219.351us         0.00%     219.351us       6.647us            33  
+                                           aten::argmax         0.00%       1.072ms         0.00%       1.667ms      50.523us     179.748us         0.00%     179.748us       5.447us            33  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     179.748us         0.00%     179.748us       5.447us            33  
+         triton_red_fused__to_copy_embedding_rms_norm_0         0.00%      13.959us         0.00%     155.816us      77.908us     161.993us         0.00%     161.993us      80.996us             2  
+                                     triton_poi_fused_1         0.00%       0.000us         0.00%       0.000us       0.000us     141.772us         0.00%     141.772us       4.296us            33  
+                         Memcpy DtoH (Device -> Pinned)         0.00%       0.000us         0.00%       0.000us       0.000us     120.731us         0.00%     120.731us       1.829us            66  
+                                            aten::fill_         0.00%       1.936ms         0.01%       4.922ms      29.470us     117.212us         0.00%     117.212us       0.702us           167  
+                          _compute_slot_mappings_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     107.872us         0.00%     107.872us       3.269us            33  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      96.930us         0.00%      96.930us       2.937us            33  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      89.154us         0.00%      89.154us       2.702us            33  
+                                    _post_update_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      83.330us         0.00%      83.330us       2.525us            33  
+                                          memcpy32_post         0.00%       0.000us         0.00%       0.000us       0.000us      82.312us         0.00%      82.312us       2.655us            31  
+                            _gather_block_tables_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      76.771us         0.00%      76.771us       2.326us            33  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      69.327us         0.00%      69.327us       1.050us            66  
+                                           aten::gather         0.00%     968.070us         0.00%       1.473ms      44.647us      68.456us         0.00%      68.456us       2.074us            33  
+void at::native::_scatter_gather_elementwise_kernel<...         0.00%       0.000us         0.00%       0.000us       0.000us      68.456us         0.00%      68.456us       2.074us            33  
+                                     triton_poi_fused_1         0.00%      12.601us         0.00%     111.260us      55.630us      67.592us         0.00%      67.592us      33.796us             2  
+void at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us      67.561us         0.00%      67.561us       2.047us            33  
+void at::native::vectorized_gather_kernel<16, long>(...         0.00%       0.000us         0.00%       0.000us       0.000us      57.131us         0.00%      57.131us       1.843us            31  
+                                    _apply_write_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      53.806us         0.00%      53.806us       4.891us            11  
+                   _get_num_sampled_and_rejected_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      53.360us         0.00%      53.360us       1.617us            33  
+               _combine_sampled_and_draft_tokens_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      52.752us         0.00%      52.752us       1.599us            33  
+                           _prepare_pos_seq_lens_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      50.859us         0.00%      50.859us       1.541us            33  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      47.885us         0.00%      47.885us       1.451us            33  
+                                           aten::arange         0.00%     847.011us         0.01%       3.216ms      48.727us      32.850us         0.00%      65.700us       0.995us            66  
+void (anonymous namespace)::elementwise_kernel_with_...         0.00%       0.000us         0.00%       0.000us       0.000us      32.850us         0.00%      32.850us       0.995us            33  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      10.172us         0.00%      10.172us       5.086us             2  
+                         _prepare_prefill_inputs_kernel         0.00%       0.000us         0.00%       0.000us       0.000us       8.829us         0.00%       8.829us       4.414us             2  
+                                Activity Buffer Request         0.00%     332.388us         0.00%     332.388us     332.388us       0.800us         0.00%       0.800us       0.800us             1  
+                          threading.py(973): _bootstrap         0.00%       1.718us        85.71%       33.989s        5.665s       0.000us         0.00%       0.000us       0.000us             6  
+                   threading.py(1016): _bootstrap_inner         0.00%       7.455us        85.71%       33.989s        5.665s       0.000us         0.00%       0.000us       0.000us             6  
+                                 threading.py(953): run         0.00%       3.877us        42.86%       16.994s        5.665s       0.000us         0.00%       0.000us       0.000us             3  
+                     vllm/v1/engine/utils.py(338): _run         0.00%       1.434us        14.29%        5.665s        5.665s       0.000us         0.00%       0.000us       0.000us             1  
+                                threading.py(607): wait         0.00%      24.544us        18.58%        7.368s        1.842s       0.000us         0.00%       0.000us       0.000us             4  
+                                threading.py(320): wait        14.29%        5.666s        14.29%        5.666s        2.833s       0.000us         0.00%       0.000us       0.000us             2  
+vllm/v1/engine/core.py(1891): process_output_sockets...         0.00%     750.319us        14.29%        5.665s        5.665s       0.000us         0.00%       0.000us       0.000us             1  
+                                     queue.py(171): get         0.00%      11.396us         0.00%       1.314ms       1.314ms       0.000us         0.00%       0.000us       0.000us             1  
+    vllm/v1/engine/core.py(1811): process_input_sockets         0.00%       1.153ms        14.29%        5.665s        5.665s       0.000us         0.00%       0.000us       0.000us             1  
+                           zmq/sugar/poll.py(106): poll         0.01%       2.974ms         0.01%       2.974ms       2.974ms       0.000us         0.00%       0.000us       0.000us             1  
+                              tqdm/_monitor.py(69): run         0.00%      59.221us        42.86%       16.994s        5.665s       0.000us         0.00%       0.000us       0.000us             3  
+                                threading.py(324): wait         4.29%        1.700s         4.30%        1.703s     567.817ms       0.000us         0.00%       0.000us       0.000us             3  
+                                  <string>(1): <module>         0.00%       2.735us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+              multiprocessing/spawn.py(116): spawn_main         0.00%       2.316us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+                   multiprocessing/spawn.py(129): _main         0.00%       1.959us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+            multiprocessing/process.py(314): _bootstrap         0.00%       3.640us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+                   multiprocessing/process.py(108): run         0.00%       1.786us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+          vllm/v1/engine/core.py(1419): run_engine_core         0.00%       1.930us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+vllm/v1/fault_tolerance/engine_core_sentinel.py(179)...         0.00%       0.699us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+            vllm/v1/engine/core.py(1474): run_busy_loop         0.00%     159.126us        14.29%        5.665s        5.665s       0.000us         0.00%        4.342s        4.342s             1  
+     vllm/v1/engine/core.py(1512): _process_input_queue         0.00%      22.479us         0.01%       3.604ms       3.604ms       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/engine/core.py(1623): _handle_client_request...         0.00%       2.248us         0.00%       1.104ms       1.104ms       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/engine/core.py(1663): _invoke_utility_method...         0.00%       8.808us         0.00%       1.102ms       1.102ms       0.000us         0.00%       0.000us       0.000us             1  
+                 vllm/v1/engine/core.py(1618): <lambda>         0.00%       1.049us         0.00%       1.009ms       1.009ms       0.000us         0.00%       0.000us       0.000us             1  
+                   vllm/v1/engine/core.py(814): profile         0.00%       2.049us         0.00%       1.008ms       1.008ms       0.000us         0.00%       0.000us       0.000us             1  
+             vllm/v1/executor/abstract.py(273): profile         0.00%       2.395us         0.00%       1.006ms       1.006ms       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/executor/uniproc_executor.py(103): collectiv...         0.00%       4.081us         0.00%       1.004ms       1.004ms       0.000us         0.00%       0.000us       0.000us             1  
+               vllm/v1/serial_utils.py(508): run_method         0.00%       6.262us         0.00%     989.677us     989.677us       0.000us         0.00%       0.000us       0.000us             1  
+            vllm/v1/worker/gpu_worker.py(1353): profile         0.00%       1.753us         0.00%     983.415us     983.415us       0.000us         0.00%       0.000us       0.000us             1  
+                   vllm/profiler/wrapper.py(101): start         0.00%       1.508us         0.00%     981.662us     981.662us       0.000us         0.00%       0.000us       0.000us             1  
+              vllm/profiler/wrapper.py(77): _call_start         0.00%       1.820us         0.00%     980.154us     980.154us       0.000us         0.00%       0.000us       0.000us             1  
+                  vllm/profiler/wrapper.py(335): _start         0.00%       4.392us         0.00%     978.334us     978.334us       0.000us         0.00%       0.000us       0.000us             1  
+                torch/profiler/profiler.py(1128): start         0.00%       2.586us         0.00%     934.831us     934.831us       0.000us         0.00%       0.000us       0.000us             1  
+      torch/profiler/profiler.py(1262): _transit_action         0.00%       9.170us         0.00%     932.245us     932.245us       0.000us         0.00%       0.000us       0.000us             1  
+           torch/profiler/profiler.py(342): start_trace         0.00%      54.402us         0.00%     923.075us     923.075us       0.000us         0.00%       0.000us       0.000us             1  
+          torch/autograd/profiler.py(414): _start_trace         0.00%     156.260us         0.00%     158.575us     158.575us       0.000us         0.00%       0.000us       0.000us             1  
+                    <built-in function perf_counter_ns>         0.00%       3.531us         0.00%       3.531us       1.766us       0.000us         0.00%       0.000us       0.000us             2  
+     torch/profiler/profiler.py(538): add_metadata_json         0.00%      23.183us         0.00%      37.978us       9.495us       0.000us         0.00%       0.000us       0.000us             4  
+<built-in method _add_metadata_json of pybind11_buil...         0.00%      14.795us         0.00%      14.795us       3.699us       0.000us         0.00%       0.000us       0.000us             4  
+<built-in method kineto_available of pybind11_builti...         0.00%       0.485us         0.00%       0.485us       0.485us       0.000us         0.00%       0.000us       0.000us             1  
+torch/profiler/profiler.py(554): _get_distributed_in...         0.00%      38.311us         0.00%     278.095us     278.095us       0.000us         0.00%       0.000us       0.000us             1  
+        torch/distributed/__init__.py(17): is_available         0.00%       3.284us         0.00%       5.084us       5.084us       0.000us         0.00%       0.000us       0.000us             1  
+                            <built-in function hasattr>         0.00%     800.880us         0.00%     909.528us       0.799us       0.000us         0.00%       0.000us       0.000us          1138  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 39.654s
+Self CUDA time total: 5.500s
+

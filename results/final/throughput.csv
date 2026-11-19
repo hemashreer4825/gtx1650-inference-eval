@@ -1,0 +1,13 @@
+model,config,runs,"decode tok/s, 1 user","decode tok/s, 16 users","prefill tok/s, 1×512","prefill tok/s, 16×512",VRAM footprint MiB
+Qwen3.5-0.8B (FP16),llama.cpp (GGUF),1,32.4,176.4,309,307,2477
+Qwen3.5-0.8B (FP16),"vLLM (default, 80% VRAM)",1,27.7,44.8,238,236,3091
+Qwen3.5-0.8B (FP16),vLLM (KV matched to llama.cpp),1,25.2,45.0,238,235,2699
+Qwen2.5-1.5B (4-bit),llama.cpp (GGUF),1,42.7,220.0,366,386,1661
+Qwen2.5-1.5B (4-bit),"vLLM (default, 80% VRAM)",1,20.5,84.7,215,212,3212
+Qwen2.5-1.5B (4-bit),vLLM (KV matched to llama.cpp),1,20.2,85.1,216,215,2591
+Qwen3-1.7B (4-bit),llama.cpp (GGUF),1,37.7,178.2,328,347,2787
+Qwen3-1.7B (4-bit),"vLLM (default, 80% VRAM)",1,17.7,64.5,201,198,2912
+Qwen3-1.7B (4-bit),vLLM (KV matched to llama.cpp),1,17.6,64.5,201,199,3095
+MiniCPM5-2B (4-bit),llama.cpp (GGUF),1,29.5,158.4,243,246,2203
+MiniCPM5-2B (4-bit),"vLLM (default, 80% VRAM)",1,13.9,64.9,141,140,3533
+MiniCPM5-2B (4-bit),vLLM (KV matched to llama.cpp),1,13.8,65.5,143,141,2991

@@ -1,0 +1,35 @@
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 1309.78it/s]
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/hf/hub/models--Qwen--Qwen3.5-0.8B/snapshots/2fc06364715b967f1860aea9cf38778875588b17
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 10 files:  10%|█         | 1/10 [00:00<00:03,  2.59it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  4.56it/s]Fetching 10 files:  70%|███████   | 7/10 [00:00<00:00, 11.33it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:20<00:00, 11.33it/s]Fetching 10 files: 100%|██████████| 10/10 [01:04<00:00,  8.96s/it]Fetching 10 files: 100%|██████████| 10/10 [01:04<00:00,  6.43s/it]
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/hf/hub/models--Qwen--Qwen2.5-1.5B-Instruct-AWQ/snapshots/3ecffa0ceb27851800f45519bab9c457a04405e1
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   7%|▋         | 1/15 [00:00<00:10,  1.38it/s]Fetching 15 files:  33%|███▎      | 5/15 [00:00<00:01,  7.67it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:00<00:00, 11.34it/s]Fetching 15 files:  73%|███████▎  | 11/15 [00:01<00:00,  7.23it/s]Fetching 15 files:  93%|█████████▎| 14/15 [00:04<00:00,  2.13it/s]Fetching 15 files:  93%|█████████▎| 14/15 [00:19<00:00,  2.13it/s]Fetching 15 files: 100%|██████████| 15/15 [01:14<00:00, 10.72s/it]Fetching 15 files: 100%|██████████| 15/15 [01:14<00:00,  4.94s/it]
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/hf/hub/models--JunHowie--Qwen3-1.7B-GPTQ-Int4/snapshots/6eee6af10283e8f36bc41ad157ba16bb508081a0
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 10 files:  10%|█         | 1/10 [00:00<00:05,  1.60it/s]Fetching 10 files:  20%|██        | 2/10 [00:00<00:02,  3.12it/s]Fetching 10 files:  50%|█████     | 5/10 [00:00<00:00,  8.52it/s]Fetching 10 files:  80%|████████  | 8/10 [00:01<00:00,  6.49it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:19<00:00,  6.49it/s]Fetching 10 files: 100%|██████████| 10/10 [02:22<00:00, 22.97s/it]Fetching 10 files: 100%|██████████| 10/10 [02:22<00:00, 14.21s/it]
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/hf/hub/models--openbmb--MiniCPM5-2B-GPTQ/snapshots/bd06c6f6b766beca852b6b08ef2b0718f5a1349c
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/gguf/qwen2.5-1.5b-instruct-q4_k_m.gguf
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/gguf/Qwen_Qwen3-1.7B-Q4_K_M.gguf
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m✓ Downloaded[0m
+  path: /home/hittu/infer-eval/models/gguf/MiniCPM5-2B-Q4_K_M.gguf
+total 5389432
+drwxr-xr-x 3 hittu hittu       4096 Nov 17 12:46 .
+drwxr-xr-x 4 hittu hittu       4096 Nov 17 12:08 ..
+drwxr-xr-x 3 hittu hittu       4096 Nov 17 12:39 .cache
+-rw-r--r-- 1 hittu hittu 1561318368 Nov 17 12:46 MiniCPM5-2B-Q4_K_M.gguf
+-rw-r--r-- 1 hittu hittu 1557660768 Nov 17 12:41 Qwen3.5-0.8B-F16.gguf
+-rw-r--r-- 1 hittu hittu 1282439584 Nov 17 12:42 Qwen_Qwen3-1.7B-Q4_K_M.gguf
+-rw-r--r-- 1 hittu hittu 1117320736 Nov 17 12:40 qwen2.5-1.5b-instruct-q4_k_m.gguf
+6.5G	models/hf
+5.2G	models/gguf
+DOWNLOADS_DONE

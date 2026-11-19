@@ -1,0 +1,16 @@
+queue stopped after MiniCPM default: 16:02:31
+minicpm5-2b-q4_default: exit=0 baseline 344 MiB, peak  3862 MiB, footprint 3518 MiB
+=== DIAG 1: own script, min_tokens vs no min_tokens (Qwen2.5-1.5B-AWQ, CUDA graphs) 16:02:31
+variant        batch  t_1tok(s)  t_128(s)  ms/step  decode tok/s
+A_min_tokens       1      0.586     6.815     49.0         20.4
+A_min_tokens       2      1.239    19.663    145.1         13.8
+A_min_tokens       4      2.424    21.337    148.9         26.9
+B_ignore_eos       1      0.593     7.002     50.5         19.8
+B_ignore_eos       2      1.254    19.882    146.7         13.6
+B_ignore_eos       4      2.408    21.363    149.3         26.8
+(EngineCore pid=71169) ERROR 11-17 16:10:21 [core.py:1673]     raise RuntimeError(
+(EngineCore pid=71169) ERROR 11-17 16:10:21 [core.py:1673] RuntimeError: Profiling is not enabled. Please set --profiler-config to enable profiling. Example: '--profiler-config.profiler=torch --profiler-config.torch_profiler_dir=YOUR_DIR_PATH_TO_DUMP_TRACE'
+=== DIAG 2: vLLM's own 'vllm bench latency', batch 1 and 2 16:10:37
+batch 1: Avg latency: 6.890773941799853 seconds
+batch 2: Avg latency: 19.76054497959958 seconds
+DIAG_DONE 16:22:51
