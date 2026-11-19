@@ -4,3 +4,13 @@ models/
 llama.cpp/
 __pycache__/
 *.pyc
+
+# kept on the laptop only - not published
+logs/
+notes.md
+results/throughput/
+results/diagnosis/
+scripts/setup/llamacpp_smoke.sh
+scripts/setup/vllm_smoke.py
+scripts/setup/run_vllm_smoke_all.sh
+scripts/diagnosis/fix_test.py

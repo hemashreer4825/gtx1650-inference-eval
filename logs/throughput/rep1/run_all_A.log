@@ -1,9 +1,0 @@
-### [A] llama.cpp qwen35-0.8b-fp16  13:33:27
-qwen35-0.8b-fp16: baseline 276 MiB, peak  2753 MiB, footprint 2477 MiB
-### [A] llama.cpp qwen25-1.5b-q4  13:37:21
-qwen25-1.5b-q4: baseline 262 MiB, peak  1923 MiB, footprint 1661 MiB
-### [A] llama.cpp qwen3-1.7b-q4  13:40:16
-qwen3-1.7b-q4: baseline 262 MiB, peak  3049 MiB, footprint 2787 MiB
-### [A] llama.cpp minicpm5-2b-q4  13:43:36
-minicpm5-2b-q4: baseline 262 MiB, peak  2465 MiB, footprint 2203 MiB
-### ALL DONE 13:47:48

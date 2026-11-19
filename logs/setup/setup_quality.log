@@ -1,19 +1,0 @@
-== build llama-perplexity 01:43:22
--rwxr-xr-x 1 hittu hittu 15968 Nov 17 23:45 /home/hittu/infer-eval/llama.cpp/build/bin/llama-perplexity
-== WikiText-2 01:43:23
-Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 173.28it/s]
-wiki.test.raw chars: 1285622
-== FP16 originals 01:43:27
-Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1032.77it/s]
-/home/hittu/infer-eval/models/hf/hub/models--Qwen--Qwen3.5-0.8B/snapshots/2fc06364715b967f1860aea9cf38778875588b17
-Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:00,  6.77it/s]Fetching 7 files:  43%|████▎     | 3/7 [00:01<00:02,  1.81it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:01<00:01,  2.52it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:16<00:11,  5.54s/it]Fetching 7 files:  86%|████████▌ | 6/7 [00:30<00:08,  8.21s/it]Fetching 7 files: 100%|██████████| 7/7 [39:39<00:00, 761.01s/it]Fetching 7 files: 100%|██████████| 7/7 [39:39<00:00, 339.88s/it]
-/home/hittu/infer-eval/models/hf/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
--rw-r--r-- 1 hittu hittu 3093669120 Nov 18 02:23 models/gguf/ref_qwen25-1.5b-q4-F16.gguf
-Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 9 files:  11%|█         | 1/9 [00:00<00:04,  1.66it/s]Fetching 9 files:  56%|█████▌    | 5/9 [00:00<00:00,  6.30it/s]Fetching 9 files:  67%|██████▋   | 6/9 [00:02<00:01,  2.17it/s]Fetching 9 files:  78%|███████▊  | 7/9 [02:04<01:01, 30.81s/it]Fetching 9 files:  89%|████████▉ | 8/9 [05:24<01:15, 75.24s/it]Fetching 9 files: 100%|██████████| 9/9 [36:22<00:00, 562.27s/it]Fetching 9 files: 100%|██████████| 9/9 [36:22<00:00, 242.51s/it]
-/home/hittu/infer-eval/models/hf/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
--rw-r--r-- 1 hittu hittu 4069679104 Nov 18 03:02 models/gguf/ref_qwen3-1.7b-q4-F16.gguf
-Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:03,  1.83it/s]Fetching 7 files:  43%|████▎     | 3/7 [00:00<00:00,  5.42it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00,  7.29it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00,  7.29it/s]Fetching 7 files: 100%|██████████| 7/7 [1:10:29<00:00, 895.41s/it]Fetching 7 files: 100%|██████████| 7/7 [1:10:29<00:00, 604.22s/it]
-/home/hittu/infer-eval/models/hf/hub/models--openbmb--MiniCPM5-2B/snapshots/42433e90dad95123ab87729fd7011e7110629556
